@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link type="text/javascript" src="/scripts/jquery.js">
+    <title>TZEEZOTJE</title>
+</head>
+
+<body>
+    <div class="popup">
+        <form action="./php/form.php" method="post" id="send">
+            <h2>We will call you!</h2>
+            <div>
+                <label for="user-name">Name: </label>
+                <input type="text" id="user-name" name="user-name" placeholder="John Doe">
+            </div>
+            <div>
+                <label for="user-phone">Phone Number: </label>
+                <input type="text" id="user-phone" name="user-phone" placeholder="+32 9 282 57 25">
+            </div>
+            <button type="submit">Reserve</button>
+            <button id="popup-close" type="button">x</button>
+        </form>
+    </div>
+    <header>
+        <section class="nav-bar">
+            <div class="hamburger-menu">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-btn" for="menu-toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu-box">
+                    <li><a class="menu-item" href="#">À la carte</a></li>
+                    <li><a class="menu-item" href="#">Wijnkaart</a></li>
+                    <li><a class="menu-item" href="#">Lunchmenu</a></li>
+                    <li><a class="menu-item" href="#">Contact</a></li>
+                    <li>
+                        <div class="hamburger-call">
+                            <img src="./assets/call.svg" alt="call">
+                            <a href="tel:+3292825725">+32 9 282 57 25</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hamburger-links">
+                            <a href="#">Fb</a>
+                            <a href="#">Ig</a>
+                            <a href="#">Tw</a>
+                            <a href="#">Yt</a>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+            <img src="./assets/logoWhite.png" alt="logo">
+            <div class="nav-bar-links">
+                <a href="#">À la carte</a>
+                <a href="#">Wijnkaart</a>
+                <a href="#">Lunchmenu</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="nav-bar-call">
+                <img src="./assets/call.svg" alt="call">
+                <a href="tel:+3292825725">+32 9 282 57 25</a>
+            </div>
+        </section>
+        <section class="header-main-info">
+            <p>Open Everyday 6AM - 9PM</p>
+            <h2>A bad day with lunch is better than a good day without it.</h2>
+            <div class="header-main-info-bottom">
+                <button id="popup-open">Reserve a table</button>
+                <div class="social-links">
+                    <a href="#">Fb</a>
+                    <a href="#">Ig</a>
+                    <a href="#">Tw</a>
+                    <a href="#">Yt</a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="weekly">
+            <section class="weekly-menu">
+                <div class="weekly-menu-block">
+                    <h2>Woensdag 12/01</h2>
+                    <div>
+                        <span>Salade met Serrano</span>
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <span>Steak Tartaar</span>
+                    </div>
+                </div>
+                <div class="weekly-menu-block">
+                    <h2>Donderdag 13/01</h2>
+                    <div>
+                        <span>Toast Roquefort</span>
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <span>Penne met Kip en Prei</span>
+                    </div>
+                </div>
+                <div class="weekly-menu-block">
+                    <h2>Vrijdag 14/01</h2>
+                    <div>
+                        <span>Verrassing van de Chef</span>
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <span>Penne met Kip en Prei</span>
+                    </div>
+                </div>
+                <div class="weekly-menu-block">
+                    <h2>Vrijdag 15/01</h2>
+                    <div>
+                        <span>Verrassing van de Chef</span>
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <span>Penne met Kip en Prei</span>
+                    </div>
+                </div>
+                <div class="weekly-menu-block">
+                    <h2>Vrijdag 16/01</h2>
+                    <div>
+                        <span>Verrassing van de Chef</span>
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <span>Penne met Kip en Prei</span>
+                    </div>
+                </div>
+            </section>
+            <section class="weekly-images">
+                <img src="./assets/weekly-1.jpg" alt="restaurant photo">
+                <img src="./assets/weekly-2.jpg" alt="restaurant photo">
+            </section>
+        </section>
+        <section class="comments-slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-info">
+                            <img src="./assets/mark.svg" alt="marks">
+                            <h2>Goede service, lekker eten, toffe ambiance</h2>
+                            <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore
+                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                                ea rebum. Stet clita kasd
+                                gubergren.</span>
+                            <p>ALAIN HEYNDRICKX</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-info">
+                            <img src="./assets/mark.svg" alt="marks">
+                            <h2>Goede service, lekker eten, toffe ambiance</h2>
+                            <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore
+                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                                ea rebum. Stet clita kasd
+                                gubergren.</span>
+                            <p>ALAIN HEYNDRICKX</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-info">
+                            <img src="./assets/mark.svg" alt="marks">
+                            <h2>Goede service, lekker eten, toffe ambiance</h2>
+                            <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore
+                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                                ea rebum. Stet clita kasd
+                                gubergren.</span>
+                            <p>ALAIN HEYNDRICKX</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script type="module" src="./scripts/swiperScript.js"></script>
+    <script src="./scripts/popup.js"></script>
+</body>
+
+</html>
